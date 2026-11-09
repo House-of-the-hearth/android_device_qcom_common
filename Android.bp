@@ -855,3 +855,11 @@ kernel_headers {
     min_sdk_version: "apex_inherit",
     visibility: ["//visibility:public"],
 }
+
+kernel_headers {
+    name: "generated_kernel_headers",
+    vendor: true,
+    recovery_available: true,
+    min_sdk_version: "apex_inherit",
+    visibility: ["//visibility:public"],
+}
