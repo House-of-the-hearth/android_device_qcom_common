@@ -30,7 +30,7 @@
 /sys/devices(/platform)?/soc/[0-9a-f]+.qcom,spmi/spmi-[0-9]+/spmi[0-9]+-[0-9]+/[0-9a-f]+.qcom,spmi:qcom,pmi[0-9]+@[0-9]+:qcom,leds@[a-f0-9]+(/.*)? u:object_r:vendor_sysfs_graphics:s0
 
 # Poweropt-service
-/(vendor|system/vendor)/bin/poweropt-service                        u:object_r:vendor_hal_poweroptservice_qti_exec:s0
+# /(vendor|system/vendor)/bin/poweropt-service                        u:object_r:vendor_hal_poweroptservice_qti_exec:s0
 /data/vendor/pwr(/.*)?                                              u:object_r:vendor_pm_data_file:s0
 
 # Init
@@ -55,12 +55,12 @@
 /sys/fs/ext4/dm-[0-10]+/lifetime_write_kbytes                        u:object_r:vendor_sysfs_fs_ext4:s0
 /sys/fs/ext4/sde[0-11]+/lifetime_write_kbytes                        u:object_r:vendor_sysfs_fs_ext4:s0
 
-/dev/socket/netmgr(/.*)?                        u:object_r:vendor_nicmd_socket:s0
+# /dev/socket/netmgr(/.*)?                        u:object_r:vendor_nicmd_socket:s0
 /dev/socket/qnicornd(/.*)?                      u:object_r:vendor_nicmd_socket:s0
-/vendor/bin/netmgrd             u:object_r:vendor_nicmd_exec:s0
+# /vendor/bin/netmgrd             u:object_r:vendor_nicmd_exec:s0
 /vendor/bin/qnicornd            u:object_r:vendor_nicmd_exec:s0
-/data/vendor/netmgr(/.*)?              u:object_r:vendor_nicm_data_file:s0
-/data/vendor/netmgr/recovery(/.*)?     u:object_r:vendor_nicm_data_file:s0
+# /data/vendor/netmgr(/.*)?              u:object_r:vendor_nicm_data_file:s0
+# /data/vendor/netmgr/recovery(/.*)?     u:object_r:vendor_nicm_data_file:s0
 /data/vendor/qnicornd(/.*)?            u:object_r:vendor_nicm_data_file:s0
 
 # Raw HID Device
